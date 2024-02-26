@@ -15,9 +15,8 @@ sc config bits start= disabled
 net stop dosvc
 sc config dosvc start= disabled
 
-echo Setting region to world....
-PowerShell Set-WinHomeLocation -GeoID 39070
-reg import set-to-world.reg
+echo Setting region to Denmark....
+PowerShell Set-WinHomeLocation -GeoID 61
 
 echo Removing stuff CTT Utility missed....
 Get-AppxPackage -alluser *Paint* | Remove-Appxpackage
