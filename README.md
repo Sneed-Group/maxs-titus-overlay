@@ -1,6 +1,8 @@
 # sams-christutus-overlay
 
-An overlay of debloating to sit on top of the Chris Titus Utility (```irm christitus.com/win | iex```)
+My personal post-oobe script.
+
+An overlay of debloating and apps to sit on top of the Chris Titus Utility (```irm christitus.com/win | iex```)
 
 ## Providing your own copy of OOSU10
 
