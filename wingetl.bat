@@ -7,9 +7,6 @@ winget install "PrestonN.FreeTube"
 winget install "Audacity.Audacity"
 
 
-winget install "Bitdefender.Bitdefender"
-
-
 winget install "pizzaboxer.Bloxstrap"
 
 
