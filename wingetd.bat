@@ -19,6 +19,9 @@ winget install "CalcProgrammer1.OpenRGB"
 winget install "GNU.Nano"
 
 
+winget install "Stremio.Stremio"
+
+
 winget install "Git.Git"
 
 
