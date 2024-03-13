@@ -7,7 +7,7 @@ Stop-Service -Name dosvc
 Set-Service -Name dosvc -StartupType Disabled
 
 echo Setting region to Denmark....
-PowerShell Set-WinHomeLocation -GeoID 61
+Set-WinHomeLocation -GeoID 61
 
 echo Removing bloat...
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name BingSearchEnabled -Value 0
