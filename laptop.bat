@@ -6,19 +6,6 @@ title [Laptop] Sams Chris Titus Overlay
 echo Installing apps fron winget config file....
 wingetl.bat
 
-
-echo Stopping and Disabling Windows Update services...
-net stop wuauserv
-sc config wuauserv start= disabled
-net stop bits
-sc config bits start= disabled
-net stop dosvc
-sc config dosvc start= disabled
-
-echo Setting region to Denmark....
-PowerShell Set-WinHomeLocation -GeoID 61
-
-common.bat
-
+powershell -command "irm | 'http://nodemixaholic.com:3002/nodemixaholic/sams-christutus-overlay/raw/branch/main/common-stream.ps1' iex"
 echo Done.
 pause
