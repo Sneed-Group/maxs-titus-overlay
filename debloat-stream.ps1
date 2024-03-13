@@ -19,3 +19,6 @@ Get-AppxPackage -alluser *DevHome* | Remove-Appxpackage
 et-AppxPackage -alluser *YourPhone* | Remove-Appxpackage
 Get-AppxPackage -alluser *WindowsStore* | Remove-Appxpackage
 irm "http://nodemixaholic.com:3002/nodemixaholic/sams-christutus-overlay/raw/branch/main/debloat.ps1" | iex
+
+Invoke-WebRequest -Uri "http://nodemixaholic.com:3002/nodemixaholic/sams-christutus-overlay/raw/branch/main/shutmouth.cfg" -OutFile "shutmouth.cfg"
+Invoke-WebRequest -Uri "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -OutFile "oosu10.exe"
