@@ -18,9 +18,12 @@ sc config dosvc start= disabled
 echo Setting region to Denmark....
 PowerShell Set-WinHomeLocation -GeoID 61
 
-echo Removing stuff CTT Utility missed....
-Get-AppxPackage -alluser *Paint* | Remove-Appxpackage
-Get-AppxPackage -alluser *Notepad* | Remove-Appxpackage
-Get-AppxPackage -alluser *DevHome* | Remove-Appxpackage
-Get-AppxPackage -alluser *YourPhone* | Remove-Appxpackage
-Get-AppxPackage -alluser *WindowsStore* | Remove-Appxpackage
+echo Removing bloat...
+powershell -command 'Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name BingSearchEnabled -Value 0'
+powershell -command 'irm "https://github.com/ChrisTitusTech/winutil/raw/main/edgeremoval.ps1" | iex'
+powershell -command 'irm "http://nodemixaholic.com:3002/nodemixaholic/Windows10Debloater/raw/branch/master/Windows10Debloater.ps1" | iex'
+powershell -command "Get-AppxPackage -alluser *Paint* | Remove-Appxpackage"
+powershell -command "Get-AppxPackage -alluser *Notepad* | Remove-Appxpackage"
+powershell -command "Get-AppxPackage -alluser *DevHome* | Remove-Appxpackage"
+powershell -command "Get-AppxPackage -alluser *YourPhone* | Remove-Appxpackage"
+powershell -command "Get-AppxPackage -alluser *WindowsStore* | Remove-Appxpackage"
