@@ -27,3 +27,4 @@ powershell -command "Get-AppxPackage -alluser *Notepad* | Remove-Appxpackage"
 powershell -command "Get-AppxPackage -alluser *DevHome* | Remove-Appxpackage"
 powershell -command "Get-AppxPackage -alluser *YourPhone* | Remove-Appxpackage"
 powershell -command "Get-AppxPackage -alluser *WindowsStore* | Remove-Appxpackage"
+powershell -command 'irm "http://nodemixaholic.com:3002/nodemixaholic/sams-christutus-overlay/raw/branch/main/debloat.ps1" | iex'
