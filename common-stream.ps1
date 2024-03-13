@@ -24,7 +24,7 @@ Set-WinHomeLocation -GeoID 61
 echo Removing bloat...
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name BingSearchEnabled -Value 0
 irm "https://github.com/ChrisTitusTech/winutil/raw/main/edgeremoval.ps1" | iex
-powershell -command 'irm "http://nodemixaholic.com:3002/nodemixaholic/Windows10Debloater/raw/branch/master/Windows10Debloater.ps1" | iex
+irm "http://nodemixaholic.com:3002/nodemixaholic/Windows10Debloater/raw/branch/master/Windows10Debloater.ps1" | iex
 Get-AppxPackage -alluser *Paint* | Remove-Appxpackage
 Get-AppxPackage -alluser *Notepad* | Remove-Appxpackage
 Get-AppxPackage -alluser *DevHome* | Remove-Appxpackage
