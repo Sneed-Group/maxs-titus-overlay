@@ -1,4 +1,4 @@
-# sams-christutus-overlay
+# maxs-christutus-overlay
 
 My personal post-oobe script.
 
