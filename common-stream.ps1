@@ -34,5 +34,4 @@ irm "https://github.com/Sneed-Group/maxs-titus-overlay/raw/main/debloat.ps1" | i
 
 Invoke-WebRequest -Uri "https://github.com/Sneed-Group/maxs-titus-overlay/raw/main/shutmouth.cfg" -OutFile "shutmouth.cfg"
 Invoke-WebRequest -Uri "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -OutFile "oosu10.exe"
-irm "http://nodemixaholic.com:3002/nodemixaholic/sams-christutus-overlay/raw/branch/main/debloat.ps1" | iex
 ./oosu10.exe shutmouth.cfg /quiet
