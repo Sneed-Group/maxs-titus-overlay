@@ -98,3 +98,23 @@ Catch{
     Write-Host "OneDrive removal failed. An error has been detected : $($_.Exception.Message)." -ForegroundColor Red
 
 }
+
+# Activate Windows 11 via MAS HWID Activation
+
+
+# Define the URL from which to download the batch file
+$url = "https://github.com/massgravel/Microsoft-Activation-Scripts/raw/master/MAS/Separate-Files-Version/Activators/HWID_Activation.cmd"
+
+# Define where you want to save the downloaded file
+$output = "C:\hwid_activate.cmd"
+
+# Download the file using PowerShell's Invoke-WebRequest cmdlet
+Invoke-WebRequest -Uri $url -OutFile $output
+
+# Check if the file was downloaded successfully
+if (Test-Path $output) {
+    # If downloaded successfully, execute the batch file
+    Start-Process -FilePath $output
+} else {
+    Write-Host "Failed to download the batch file."
+}
